@@ -1,19 +1,22 @@
 #include<iostream>
 #include<conio.h>
+
 using namespace std;
+
 int main()
-{
-	int x;
-	
+{	
 	cout <<"Counting..."<<endl;
-	for (x=1;x<=10;x++)
+	// for loop the number is up to ten.
+	for (int x=1;x<=10;x++)
 	{
 		cout << x << ",";
-	}	
-	for (x=11;x<=30;x++)
+	}
+	// another for loop, it starts to 11 and the loop ends at 30.
+	for (int x=11;x<=30;x++)
 	{
 		cout << x++ + 1<< ",";
 	}
+	
 getch();
 return 0;
 }	
