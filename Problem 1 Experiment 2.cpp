@@ -8,16 +8,21 @@ int main()
 	char type_of_package;
 	int hours_of_used;
 	int monthly_due;
+	
 	cout <<"Choose Your Desired Plan" << endl;
 	cout << "+ Type A or a for P995/mo.Additional Hours are P20" << endl;
 	cout << "+ Type B or b for P1499/mo.Additional Hours are P10" << endl;
 	cout <<	"+ Type C or c for P1995/mo." << endl;
+	
 	cout << "Type Your Choice: " << " ";
 	cin >> type_of_package;
+	
 	cout << "Type Your Hours of used: "<<" ";
 	cin >> hours_of_used;
+	
 	// switch is used to select the desired cases.
 	// to access cases we must input letters based on what asks and it will execute.
+	
 	switch (type_of_package)
 	{	
 		case 'a':
@@ -56,8 +61,9 @@ int main()
 			// letter is only accepted because cases were declared in char data type.
 		default:
 			cout << "Invalid Input" << endl;
+			
 	}
+	
 	getch();
 	return 0;
-	
 }
